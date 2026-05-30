@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+torch
+torchvision
+transformers
+peft
+accelerate
+pillow
+requests
+pydantic
+safetensors
+

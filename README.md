@@ -42,8 +42,4 @@ Analyzes a given image URL and news text to classify the content as `real` or `f
   "confidenceScore": 98.24
 }
 ```
-*Note: The `confidenceScore` is mathematically derived from the model's Softmax probabilities for the generated token.*
 
-
-   uvicorn main:app --host 0.0.0.0 --port 8000
-   ```

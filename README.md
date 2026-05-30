@@ -44,27 +44,6 @@ Analyzes a given image URL and news text to classify the content as `real` or `f
 ```
 *Note: The `confidenceScore` is mathematically derived from the model's Softmax probabilities for the generated token.*
 
-## ⚙️ Local Setup
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/ziadalaa7/multimodal-misinformation-analyzer.git](https://github.com/ziadalaa7/multimodal-misinformation-analyzer.git)
-   cd multimodal-misinformation-analyzer
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Set Environment Variables:**
-   Create a `.env` file or export your Hugging Face token securely. The application requires the token to download the base Gemma-3 model:
-   ```bash
-   export HF_TOKEN="your_huggingface_token"
-   ```
-   *(Note: The LoRA weights directory `checkpoint-408` must be placed in the root folder before running locally, but it is not pushed to this repository due to size limits).*
-
-4. **Run the server:**
-   ```bash
    uvicorn main:app --host 0.0.0.0 --port 8000
    ```
